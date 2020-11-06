@@ -1,38 +1,130 @@
+.navs {
+  display: flex;
+  justify-content: space-around;
+  border:2px solid green;
+  padding: 1% ;
+  background: #289789;
+}
+.navs a {
+  text-decoration: none;
+  color:white;
+  font-size: 1.3rem
+}
 .App {
-  text-align: center;
+  background: #d3d0d0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* media query 500px */
+@media (max-width:600px){
+  .navs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navs a {
+    width: 100%;
+    text-align:center ;
+    padding: 1% 0;
+   
+  }
+  .navs a:hover {
+    background: #ececec;
+    color: #19857a;
+   
+  }
+  .contact-form button  {
+    font-size: 1rem
+  }
+  .experiences {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+  
+    border: solid red
+  }
+  .experiences .card {
+    width: 80%;
+    /* border: solid red; */
+    margin: 1% 10%
+  }
+  .exp-container h1 {
+    font-size:1.5rem
+  }
+  .experiences .card h2{
+    font-size: 1.2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+/* style contact form */
+.contact-form h1 {
+  font-size: 1.5rem;
+
+  
+}
+form {
+  display:flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border:solid green;
+  padding: 1% 10%;
+  font-size: 1.3rem
+}
+form label {
+ align-content: left;
+
 }
 
-.App-link {
-  color: #61dafb;
+form input,textarea,label {
+  width: 60%
+}
+form textarea {
+  height: 25vh;
+  margin-bottom: 2%
+}
+form button {
+  width: 25%;
+  padding: 1%;
+  border-radius:5px;
+  border: 1px solid #83839c;
+  font-size: 1.3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* experienses style */
+@media (max-width:750px){
 }
+.experiences {
+  border: solid green;
+  padding: 1% 5%;
+  display: flex;
+  flex-wrap: wrap;;
+
+}
+
+/* card style */
+
+.card {
+  border: 1px solid green;
+  width:44%;
+  margin: 1.5%;
+  padding: 1%
+}
+
+/* experienses style */
+@media (max-width:1600px){
+}
+.experiences {
+  border: solid green;
+  padding: 1% 5%;
+  display: flex;
+  flex-wrap: wrap;;
+
+}
+
+/* card style */
+
+.card {
+  border: 1px solid green;
+  width:44%;
+  margin: 1.5%;
+  padding: 1%
+}
+
